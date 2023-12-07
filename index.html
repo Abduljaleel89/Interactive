@@ -4,19 +4,42 @@
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
 	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="dist/css/lightbox.css">
 	<script src = "js/gallery.js"></script>
 </head>
-<body>
+<body onload = "pickImage()">
 	
-	<div id = "image">
-		Hover over an image below to display here.
+	<div>
+		<img id = "header_img" alt = "">
+		
 	</div>
+	<a href = "img/car1.jpg" data-lightbox = "header_img"
+	data-title = "Car 1 ">
+	<img class = "preview" alt = "First Car" src = "img/car1.jpg" onfocus="upDate(this)" onblur="unDo()" onmouseover = "upDate(this)" onmouseout ="unDo()">
+	</a>
+<a href = "img/car2.jpeg" data-lightbox = "header_img"
+	data-title = "Car 2 ">
+	<img class = "preview" alt = "Second Car" src = "img/car2.jpeg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	</a>
 	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+<a href = "img/car3.jpeg" data-lightbox = "header_img"
+	data-title = "Car 3 ">
+	<img class = "preview" alt = "Third Car" src = "img/car3.jpeg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	</a>
+
+<a href = "img/car4.jpeg" data-lightbox = "header_img"
+	data-title = "Car 4 ">
+	<img class = "preview" alt = "Fourth Car" src = "img/car4.jpeg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	</a>
+<a href = "img/car5.jpeg" data-lightbox = "header_img"
+	data-title = "Car 5 ">
+	<img class = "preview" alt = "Fifth Car" src = "img/car5.jpeg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	</a>
+<a href = "img/car6.jpeg" data-lightbox = "header_img"
+	data-title = "Car 6 ">
+	<img class = "preview" alt = "Sixth Car" src = "img/car6.jpeg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	</a>
 
 </body>
+<script src = "dist/js/lightbox-plus-jquery.js"></script>
 </html>
